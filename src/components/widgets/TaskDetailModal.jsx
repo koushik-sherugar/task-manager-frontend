@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import { ButtonsColoured } from "./Buttons";
 
 const TaskDetailModal = ({ selectedTask, isModalOpen, closeModal }) => {
   return (
@@ -28,9 +29,11 @@ const TaskDetailModal = ({ selectedTask, isModalOpen, closeModal }) => {
         <strong>Created At:</strong>{" "}
         {new Date(selectedTask.createdAt).toLocaleString()}
       </p>
-      <button onClick={closeModal} style={{ marginTop: "20px" }}>
-        Close
-      </button>
+      <ButtonsColoured
+        title="Close"
+        color="accentblue"
+        clickAction={closeModal}
+      />
     </Modal>
   );
 };

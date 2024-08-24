@@ -30,7 +30,7 @@ export const ButtonsOutlined = ({ clickAction, title, classParam }) => {
 
 export const ButtonsColoured = ({ clickAction, title, color }) => {
   const colorClasses = {
-    redmid: "bg-redmid",
+    redMid: "bg-redMid",
     accentblue: "bg-accentblue",
     blueMid: "bg-blueMid",
     blueLight: "bg-blueLight",
@@ -38,8 +38,7 @@ export const ButtonsColoured = ({ clickAction, title, color }) => {
   };
   return (
     <button
-      // className={`border bg-${color} rounded-md p-1 text-white`}
-      className={`border ${colorClasses[color]} rounded-md py-1 text-white`}
+      className={`border ${colorClasses[color]} rounded-md p-1 text-white`}
       onClick={clickAction}
     >
       {title}
